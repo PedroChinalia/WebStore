@@ -1,0 +1,277 @@
+body{
+    width:100%;
+}
+
+/* Navbar Style */
+.nav-font-size{
+    font-size: 1.25rem;
+}
+
+/* Carrossel Style */
+.imagem-carrossel{
+    object-fit: cover;
+    object-position: 0 60%;
+    height: 650px;
+}
+
+/* Components Style */
+.card-shadow{
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.invalid{
+    border-color:red;
+}
+
+/* Destaques Style */
+.card-destaque{
+    width: 18rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.imagem-destaque{
+    height: 300px;
+}
+
+.div-destaques{
+    display: flex;
+    justify-content: center;
+}
+
+/* Categorias Style */
+.card-categoria{
+    width: 18rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.imagem-categoria{
+    height: 380px;
+}
+
+.div-categoria{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+/* Novidades Style */
+.novidades-input{
+    width: 33.4%;
+}
+
+/* Rodape Style */
+.div-rodape{
+    display: flex;
+    justify-content: space-between;
+}
+
+.div-content-rodape-1{
+    margin-left: 3rem;
+}
+
+.div-content-rodape-2{
+    margin-right: 3rem;
+}
+
+.rodape-text{
+    margin-bottom: 1rem;
+}
+
+.btn-up-position{
+    position: absolute;
+    margin-left: 1200px;
+    margin-top: 70px;
+}
+
+.btn-up-icon{
+    height:70px; 
+    width:70px;
+}
+
+/* Responsive Style */
+@media (max-width: 1440px) {
+    .card-destaque{
+        width: 16rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .card-categoria{
+        width: 16rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .card-destaque{
+        width: 11rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    
+    .imagem-destaque{
+        height: 200px;
+    }
+
+    .card-categoria{
+        width: 13rem;
+        height:360px;
+        margin-left: 0.75rem;
+        margin-right: 0.75rem;
+    }
+
+    .imagem-categoria{
+        height: 280px;
+    }
+
+    .btn-up-position{
+        position: absolute;
+        margin-left: 820px;
+        margin-top: 70px;
+    }
+
+    .btn-up-icon{
+        height:50px; 
+        width:50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .card-destaque{
+        width: 18rem;
+        margin-left: 15rem;
+        margin-bottom: 2rem;
+    }
+
+    .div-destaques{
+        display: block;
+        justify-content: center;
+    }
+
+    .imagem-destaque{
+        height: 280px;
+    }
+
+    .div-categoria{
+        display: block;
+        justify-content: center;
+        margin-bottom: 3rem;
+    }
+
+    .card-categoria{
+        width: 18rem;
+        height: 450px;
+        margin-left: 15rem;
+        margin-bottom: 3rem;
+    }
+
+    .imagem-categoria{
+        height: 380px;
+    }
+
+    .btn-up-position{
+        position: absolute;
+        margin-left: 650px;
+        margin-top: 20px;
+    }
+
+    .btn-up-icon{
+        height:45px;
+        width:45px;
+    }
+}
+
+@media (max-width: 425px) {
+    .card-destaque{
+        width: 14rem;
+        margin-left: 6rem;
+        margin-bottom: 2rem;
+    }
+
+    .div-destaques{
+        display: block;
+        justify-content: center;
+    }
+
+    .div-categoria{
+        display: block;
+        justify-content: center;
+        margin-bottom: 3rem;
+    }
+
+    .card-categoria{
+        width: 14rem;
+        height:360px;
+        margin-left: 6rem;
+        margin-bottom: 2rem;
+    }
+
+    .novidades-input{
+        width: 90%;
+    }
+
+    .novidades-text{
+        font-size: 18px;
+    }
+
+    .div-rodape{
+        display: block;
+        justify-content: center;
+    }
+
+    .div-content-rodape-1{
+        margin-left: 0.5rem;
+        margin-bottom: 3rem;
+    }
+    
+    .div-content-rodape-2{
+        margin-left: 3.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .rodape-text{
+        margin-left: 3rem;
+    }
+
+    .btn-up-position{
+        margin-left: 10px;
+        margin-top: 350px;
+    }
+    
+    .btn-up-icon{
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 375px) {
+    .card-destaque{
+        width: 14rem;
+        margin-left: 5rem;
+        margin-bottom: 2rem;
+    }
+
+    .card-categoria{
+        width: 14rem;
+        height:360px;
+        margin-left: 5rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .card-destaque{
+        width: 14rem;
+        margin-left: 3.25rem;
+        margin-bottom: 2rem;
+    }
+
+    .card-categoria{
+        width: 14rem;
+        height:360px;
+        margin-left: 3.25rem;
+        margin-bottom: 2rem;
+    }
+}
