@@ -5,12 +5,12 @@ A simple example of a virtual store page.
 
 Be sure to run the command:
 ```
-npm install
+$ npm install
 ```
 to install all the project dependencies.
 
 Then, run:
 ```
-gulp server
+$ gulp server
 ```
 to start the server.
