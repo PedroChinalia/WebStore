@@ -7,4 +7,10 @@ Be sure to run the command:
 ```
 npm install
 ```
-Before you run the project!
+to install all the project dependencies.
+
+Then, run:
+```
+gulp server
+```
+to start the server.
