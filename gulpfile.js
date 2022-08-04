@@ -50,9 +50,9 @@ function tasksHTML(callback){
 
 function tasksImages(){
 
-    return gulp.src('.src/imag/*')
+    return gulp.src('./src/img/*')
         .pipe(imagemin())
-        .pipe(gulp.dest('dist/images'))
+        .pipe(gulp.dest('./dist/img'))
 }
 
 exports.default = series( tasksHTML, tasksCSS, tasksJS )
