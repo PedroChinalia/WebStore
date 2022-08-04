@@ -5,14 +5,17 @@ const cssmin = require('gulp-cssmin')
 const rename = require('gulp-rename')
 const uglify = require('gulp-uglify')
 const htmlmin = require('gulp-htmlmin')
-const imagemin = require('gulp-imagemin');
+const imagemin = require('gulp-imagemin')
+const babel = require('gulp-babel')
+const browserSync = require('browser-sync').create()
+const reload = browserSync.reload
 
 function tasksCSS(callback){
 
     gulp.src([
         './node_modules/bootstrap/dist/css/bootstrap.css',
-        './src/css/fonts.css',
-        './src/css/style.css'
+        './src/css/style.css',
+        './src/css/fonts.css'
         ])
         .pipe(concat('styles.css'))
         .pipe(cssmin())
@@ -31,6 +34,10 @@ function tasksJS(callback){
         './node_modules/bootstrap/dist/js/bootstrap.bundle.js',
         './src/js/custom.js'
         ])
+        .pipe(babel({
+            comments: true,
+            presets: ['@babel/env']
+        }))
         .pipe(concat('scripts.js'))
         .pipe(uglify())
         .pipe(rename({suffix:'.min'}))
@@ -55,7 +62,20 @@ function tasksImages(){
         .pipe(gulp.dest('./dist/img'))
 }
 
-exports.default = series( tasksHTML, tasksCSS, tasksJS )
+gulp.task('server', function(){
+
+    browserSync.init({
+        server: {
+            baseDir: "./dist"
+        }
+    })
+    gulp.watch('./src/**/*').on('change', process)
+    gulp.watch('./dist/**/*').on('change', reload)
+})
+
+const process = series( tasksHTML, tasksCSS, tasksJS )
+
+exports.default = process
 exports.styles = tasksCSS
 exports.scripts = tasksJS
 exports.images = tasksImages
