@@ -32,5 +32,9 @@ function tasksJS(){
         .pipe(gulp.dest('./dist/js'))
 }
 
+function tasksHTML(cb){
+    gulp
+}
+
 exports.styles = tasksCSS
 exports.scripts = tasksJS
