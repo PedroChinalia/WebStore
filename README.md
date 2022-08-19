@@ -14,3 +14,5 @@ Then, run:
 $ gulp server
 ```
 to start a local server.
+
+You can also access the site by clicking <a href="" target="blank">here</a>!
