@@ -13,4 +13,4 @@ Then, run:
 ```
 $ gulp server
 ```
-to start the server.
+to start a local server.
